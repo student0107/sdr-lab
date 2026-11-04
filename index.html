@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SDR_LAB — Software Defined Radio, RTL-SDR, HackRF One" />
+  <title>SDR_LAB — Software Defined Radio</title>
+  <style>
+    :root {
+      --nav-bg: #13161c;
+      --panel: rgba(24, 30, 42, 0.94);
+      --panel-inner: rgba(0, 0, 0, 0.28);
+      --border: rgba(255, 255, 255, 0.07);
+      --text: #f2f4f8;
+      --muted: #b4bcc8;
+      --soft: #8a939f;
+      --accent: #7eb3e8;
+      --font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      --mono: Consolas, "Cascadia Mono", monospace;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font);
+      color: var(--text);
+      background: #0c0f14;
+      line-height: 1.65;
+    }
+
+    .page-bg {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      background:
+        linear-gradient(180deg, rgba(8, 11, 18, 0.72) 0%, rgba(8, 11, 18, 0.9) 100%),
+        url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1920&q=80") center / cover no-repeat;
+    }
+
+    .page-bg .waves {
+      position: absolute;
+      inset: 0;
+      opacity: 0.1;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .page-bg .waves svg {
+      position: absolute;
+      width: 200%;
+      height: 90px;
+      left: -50%;
+      animation: wave-drift 28s linear infinite;
+    }
+
+    .page-bg .waves svg:nth-child(2) {
+      top: 45%;
+      animation-duration: 22s;
+      animation-direction: reverse;
+    }
+
+    .page-bg .waves svg:nth-child(3) {
+      top: 72%;
+      animation-duration: 34s;
+    }
+
+    @keyframes wave-drift {
+      to { transform: translateX(25%); }
+    }
+
+    .page-bg .waves path {
+      fill: none;
+      stroke: #fff;
+      stroke-width: 1;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      background: var(--nav-bg);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0.85rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+
+    .logo .cursor {
+      display: inline-block;
+      width: 2px;
+      height: 0.92em;
+      background: #fff;
+      margin-left: 3px;
+      vertical-align: text-bottom;
+      animation: blink 1s step-end infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      gap: 0.2rem 1.35rem;
+      justify-content: flex-end;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.9rem;
+      opacity: 0.88;
+      transition: opacity 0.2s;
+    }
+
+    nav a:hover {
+      opacity: 1;
+    }
+
+    .nav-toggle {
+      display: none;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      color: #fff;
+      padding: 0.35rem 0.65rem;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .nav-toggle { display: block; }
+      nav { width: 100%; }
+      nav ul {
+        display: none;
+        flex-direction: column;
+        padding: 0.75rem 0 0.25rem;
+        border-top: 1px solid var(--border);
+      }
+      nav ul.open { display: flex; }
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      padding-bottom: 2rem;
+    }
+
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      scroll-margin-top: 4.5rem;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      padding: clamp(1.35rem, 4vw, 2.25rem);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+      margin-top: 1.35rem;
+    }
+
+    .hero-section {
+      padding-top: 1.75rem;
+      min-height: calc(100vh - 5rem);
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-section .panel {
+      margin-top: 0;
+      width: 100%;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(140px, 220px) 1fr;
+      gap: clamp(1rem, 3vw, 2rem);
+      align-items: start;
+    }
+
+    @media (max-width: 640px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .sdr-mock {
+      background: #0a0c10;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 2px;
+      overflow: hidden;
+      font-family: var(--mono);
+      font-size: 9px;
+      line-height: 1.3;
+      color: #6cf;
+      box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .sdr-mock .bar {
+      background: #1a2030;
+      padding: 4px 6px;
+      color: #aaa;
+      border-bottom: 1px solid #333;
+      font-size: 8px;
+    }
+
+    .sdr-mock .spectrum {
+      height: 72px;
+      background: linear-gradient(180deg, #0d1520 0%, #050810 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .sdr-mock .spectrum::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        repeating-linear-gradient(
+          90deg,
+          transparent,
+          transparent 8px,
+          rgba(100, 180, 255, 0.08) 8px,
+          rgba(100, 180, 255, 0.08) 9px
+        );
+    }
+
+    .sdr-mock .wf {
+      height: 48px;
+      background: linear-gradient(
+        180deg,
+        #1a0808 0%,
+        #082018 35%,
+        #180818 70%,
+        #081828 100%
+      );
+      opacity: 0.85;
+      animation: wf-scroll 4s linear infinite;
+      background-size: 100% 200%;
+    }
+
+    @keyframes wf-scroll {
+      0% { background-position: 0 0; }
+      100% { background-position: 0 100%; }
+    }
+
+    .sdr-mock .freq {
+      padding: 5px 6px;
+      color: #ff6;
+      letter-spacing: 0.05em;
+    }
+
+    .hero-content h1 {
+      font-size: clamp(1.5rem, 4.5vw, 2.1rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.25;
+      margin-bottom: 0.85rem;
+    }
+
+    .hero-content h1 .typewriter {
+      border-right: 2px solid rgba(255, 255, 255, 0.65);
+      padding-right: 3px;
+    }
+
+    .hero-content .subtitle {
+      color: var(--muted);
+      font-size: clamp(0.95rem, 2.5vw, 1.05rem);
+      margin-bottom: 1.5rem;
+      max-width: 36rem;
+    }
+
+    .btn-scan {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      padding: 0.6rem 1.4rem;
+      font-size: 0.95rem;
+      font-family: inherit;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .btn-scan:hover {
+      background: rgba(255, 255, 255, 0.16);
+      border-color: rgba(255, 255, 255, 0.45);
+    }
+
+    section h2 {
+      font-size: clamp(1.3rem, 3.5vw, 1.65rem);
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.85rem;
+    }
+
+    .panel p {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .panel p strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .antennas-grid {
+      display: grid;
+      grid-template-columns: 1fr minmax(180px, 260px);
+      gap: 1.75rem;
+      align-items: start;
+      margin-top: 0.35rem;
+    }
+
+    @media (max-width: 720px) {
+      .antennas-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .antenna-list {
+      list-style: none;
+      margin-top: 0.75rem;
+    }
+
+    .antenna-list li {
+      display: flex;
+      gap: 0.85rem;
+      padding: 0.85rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .antenna-list li:last-child {
+      border-bottom: none;
+    }
+
+    .antenna-list .icon {
+      font-size: 1.35rem;
+      flex-shrink: 0;
+      line-height: 1.2;
+    }
+
+    .antenna-list h3 {
+      font-size: 1rem;
+      color: #fff;
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+    }
+
+    .antenna-list p {
+      font-size: 0.92rem;
+    }
+
+    .antenna-visual {
+      background: var(--panel-inner);
+      border: 1px solid var(--border);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .antenna-visual svg {
+      width: 100%;
+      max-width: 180px;
+      height: auto;
+    }
+
+    .antenna-visual figcaption {
+      font-size: 0.78rem;
+      color: var(--soft);
+      margin-top: 0.5rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 800px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card {
+      background: var(--panel-inner);
+      border: 1px solid var(--border);
+      padding: 1.2rem 1.1rem;
+      border-radius: 2px;
+      transition: box-shadow 0.25s, border-color 0.25s, transform 0.25s;
+    }
+
+    .card:hover {
+      border-color: rgba(126, 179, 232, 0.5);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(126, 179, 232, 0.12);
+      transform: translateY(-4px);
+    }
+
+    .card .card-icon {
+      font-size: 1.75rem;
+      margin-bottom: 0.45rem;
+      display: block;
+    }
+
+    .card h3 {
+      color: #fff;
+      font-size: 1.05rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .card .freq {
+      font-family: var(--mono);
+      font-size: 0.82rem;
+      color: var(--accent);
+      margin-bottom: 0.45rem;
+    }
+
+    .card p {
+      font-size: 0.92rem;
+    }
+
+    .equipment-dl {
+      margin-top: 0.5rem;
+    }
+
+    .equipment-dl div {
+      padding: 0.65rem 0;
+      border-bottom: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .equipment-dl div:last-child {
+      border-bottom: none;
+    }
+
+    .equipment-dl dt {
+      display: inline;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .equipment-dl dd {
+      display: inline;
+      margin: 0;
+    }
+
+    footer {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 1.75rem 1rem 2.25rem;
+      background: var(--nav-bg);
+      border-top: 1px solid var(--border);
+      color: var(--soft);
+      font-size: 0.9rem;
+    }
+
+    footer span {
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true">
+    <div class="waves">
+      <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+        <path d="M0,40 Q150,10 300,40 T600,40 T900,40 T1200,40" />
+      </svg>
+      <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+        <path d="M0,40 Q100,70 200,40 T400,40 T600,40 T800,40 T1200,40" />
+      </svg>
+      <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+        <path d="M0,40 Q200,5 400,40 T800,40 T1200,40" />
+      </svg>
+    </div>
+  </div>
+
+  <header>
+    <div class="header-inner">
+      <a href="#home" class="logo">SDR_LAB<span class="cursor" aria-hidden="true"></span></a>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+      <nav aria-label="Основное меню">
+        <ul id="navMenu">
+          <li><a href="#home">Главная</a></li>
+          <li><a href="#antennas">Антенны</a></li>
+          <li><a href="#goals">Цели</a></li>
+          <li><a href="#equipment">Оборудование</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section wrap" id="home">
+      <div class="panel">
+        <div class="hero-grid">
+          <div class="sdr-mock" aria-hidden="true">
+            <div class="bar">SDRangel · IQ</div>
+            <div class="spectrum"></div>
+            <div class="wf"></div>
+            <div class="freq">118.700 MHz · AM</div>
+          </div>
+          <div class="hero-content">
+            <h1><span class="typewriter" id="heroTitle"></span></h1>
+            <p class="subtitle">
+              От переговоров пилотов до спутников на орбите. Мой путь в мир Software Defined Radio.
+            </p>
+            <button type="button" class="btn-scan" id="scanBtn">Начать сканирование</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="about">
+      <div class="panel">
+        <h2>Что такое SDR?</h2>
+        <p>
+          <strong>SDR (Software Defined Radio)</strong> — это магия радиоволн в твоем компьютере.
+          Вместо паяльника — код. Вместо схем — софт. Мой главный инструмент —
+          <strong>HackRF One</strong>, способный принимать сигналы от 1 МГц до 6 ГГц.
+        </p>
+      </div>
+    </section>
+
+    <section class="wrap" id="antennas">
+      <div class="panel">
+        <h2>Антенны — уши вашего SDR</h2>
+        <div class="antennas-grid">
+          <div>
+            <p>
+              Бесполезно иметь мощный приемник, если антенна не настроена на нужную частоту.
+              Длина антенны напрямую зависит от длины радиоволны. Вот как это работает:
+            </p>
+            <ul class="antenna-list">
+              <li>
+                <span class="icon" aria-hidden="true">📏</span>
+                <div>
+                  <h3>Телескопическая</h3>
+                  <p>Универсальный вариант. Раздвигается на нужную длину (например, 75 см для FM-радио или 17 см для раций).</p>
+                </div>
+              </li>
+              <li>
+                <span class="icon" aria-hidden="true">🔄</span>
+                <div>
+                  <h3>Магнитная рамка</h3>
+                  <p>Лучший выбор для коротких волн (КВ) в городе. Отсекает помехи от компьютеров и ловит дальние сигналы.</p>
+                </div>
+              </li>
+              <li>
+                <span class="icon" aria-hidden="true">🕷️</span>
+                <div>
+                  <h3>Самодельная «Паук»</h3>
+                  <p>Идеальна для приема сигналов самолетов (1090 МГц). Делается из медного провода и разъема за 15 минут.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <figure class="antenna-visual">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="100" cy="100" r="72" stroke="#7eb3e8" stroke-opacity="0.35" stroke-width="1"/>
+              <path d="M100 38 L100 162" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M72 58 H128 M76 78 H124 M80 98 H120" stroke="#7eb3e8" stroke-width="1.5" stroke-linecap="round"/>
+              <ellipse cx="100" cy="166" rx="24" ry="7" stroke="#888" stroke-width="1.5" fill="rgba(0,0,0,0.35)"/>
+              <path d="M35 100 Q100 55 165 100" stroke="#7eb3e8" stroke-opacity="0.4" stroke-width="1"/>
+            </svg>
+            <figcaption>Длина антенны ↔ частота</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="goals">
+      <div class="panel">
+        <h2>Цели (Что можно поймать?)</h2>
+        <div class="cards">
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">✈️</span>
+            <h3>Авиация</h3>
+            <p class="freq">120 МГц · AM</p>
+            <p>Переговоры диспетчеров и пилотов в режиме AM.</p>
+          </article>
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">🛰️</span>
+            <h3>Спутники</h3>
+            <p class="freq">137 МГц · FM</p>
+            <p>Прием погодных снимков от NOAA.</p>
+          </article>
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">🚗</span>
+            <h3>Рации</h3>
+            <p class="freq">433 МГц · NFM</p>
+            <p>Переговоры такси и охраны в режиме NFM.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="equipment">
+      <div class="panel">
+        <h2>Мое оборудование</h2>
+        <div class="equipment-dl">
+          <div><dt>Приемник: </dt><dd>HackRF One (1 МГц – 6 ГГц).</dd></div>
+          <div><dt>Антенны: </dt><dd>Телескопическая, самодельная антенна «Паук», магнитная рамка.</dd></div>
+          <div><dt>Софт: </dt><dd>SDRangel, GNU Radio.</dd></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 <span>SDR Lab</span>. Сделано с любовью к радиоэфиру.
+  </footer>
+
+  <script>
+    (function () {
+      var titleEl = document.getElementById("heroTitle");
+      var fullTitle = "Исследуй невидимый эфир";
+      var index = 0;
+      var typing = true;
+
+      function typeWriter() {
+        if (typing) {
+          if (index <= fullTitle.length) {
+            titleEl.textContent = fullTitle.slice(0, index);
+            index += 1;
+            setTimeout(typeWriter, index === fullTitle.length + 1 ? 2200 : 68);
+          } else {
+            typing = false;
+            index = fullTitle.length;
+            setTimeout(function () {
+              typing = true;
+              index = 0;
+              typeWriter();
+            }, 3200);
+          }
+        }
+      }
+
+      typeWriter();
+
+      document.getElementById("scanBtn").addEventListener("click", function () {
+        document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+      });
+
+      var toggle = document.getElementById("navToggle");
+      var menu = document.getElementById("navMenu");
+
+      toggle.addEventListener("click", function () {
+        var open = menu.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+
+      menu.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          menu.classList.remove("open");
+          toggle.setAttribute("aria-expanded", "false");
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
