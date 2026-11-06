@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Магазин SDR-оборудования — SDR_LAB" />
+  <title>SDR_LAB — Магазин</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="shop.html">
+  <div class="page-bg" aria-hidden="true">
+    <canvas id="neonParticlesCanvas" class="neon-particles-canvas" aria-hidden="true"></canvas>
+    <div class="waves">
+      <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+        <path d="M0,40 Q150,10 300,40 T600,40 T900,40 T1200,40" />
+      </svg>
+      <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+        <path d="M0,40 Q100,70 200,40 T400,40 T600,40 T800,40 T1200,40" />
+      </svg>
+      <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+        <path d="M0,40 Q200,5 400,40 T800,40 T1200,40" />
+      </svg>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="SDR_LAB — на главную">
+        <span class="logo-prompt" aria-hidden="true">&gt;</span>SDR_LAB<span class="cursor" aria-hidden="true"></span>
+      </a>
+      <nav class="site-nav" aria-label="Основное меню">
+        <ul class="nav-list" id="navMenu">
+          <li><a href="index.html" data-nav="index.html">Главная</a></li>
+          <li><a href="antennas.html" data-nav="antennas.html">Антенны</a></li>
+          <li><a href="software.html" data-nav="software.html">Софт</a></li>
+          <li><a href="shop.html" data-nav="shop.html" class="nav-active" aria-current="page">Магазин</a></li>
+          <li><a href="calculator.html" data-nav="calculator.html">Калькулятор</a></li>
+          <li><a href="map.html" data-nav="map.html">Карта</a></li>
+        </ul>
+      </nav>
+      <div class="header-aside">
+
+      <div class="weather-widget weather-widget--header" aria-live="polite">
+        <form class="weather-widget-form" id="weatherCityForm" data-weather-form>
+          <div class="weather-widget-controls">
+            <select class="weather-widget-select" id="weatherCitySelect" data-weather-select aria-label="Выбор города">
+              <option value="Казань" selected>Казань</option>
+              <option value="Москва">Москва</option>
+              <option value="Санкт-Петербург">Санкт-Петербург</option>
+              <option value="Новосибирск">Новосибирск</option>
+              <option value="Екатеринбург">Екатеринбург</option>
+              <option value="Сочи">Сочи</option>
+            </select>
+            <input class="weather-widget-input" type="text" id="weatherCityInput" data-weather-input placeholder="Другой город" autocomplete="off" />
+            <button type="submit" class="weather-widget-find">Найти</button>
+          </div>
+        </form>
+        <div class="weather-widget-readout">
+          <span class="weather-display-icon" data-weather-part="icon" aria-hidden="true">⏳</span>
+          <span class="weather-display-city" data-weather-part="city">Казань</span>
+          <span class="weather-display-time" data-weather-part="time" id="headerClock">--:--</span>
+          <span class="weather-display-temp" data-weather-part="temp">…</span>
+        </div>
+        <p class="weather-widget-error is-hidden" id="weatherError" data-weather-error role="alert"></p>
+      </div>
+
+      <div class="header-actions">
+        <button type="button" class="btn-cart" id="btnCartOpen" aria-label="Корзина">
+          <span class="cart-icon" aria-hidden="true">🛒</span>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <div class="header-auth" id="headerAuth">
+          <button type="button" class="btn-auth-open" id="btnAuthOpen">Войти</button>
+          <div class="header-auth-user is-hidden" id="headerAuthUser" hidden>
+            <button type="button" class="header-auth-greeting" id="headerAuthGreeting" title="Личный кабинет">Привет</button>
+            <button type="button" class="btn-auth-logout" id="btnAuthLogout">Выйти</button>
+          </div>
+        </div>
+      </div>
+        <button type="button" class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="wrap content-section shop-page" id="shop">
+      <div class="panel reveal shop-hero-panel">
+        <span class="section-tag">// sdr_shop.exe</span>
+        <h2>Магазин SDR_LAB</h2>
+        <p class="shop-lead">Премиальный каталог SDR-оборудования. Оплата на сайте не подключена — заказ через Telegram <a href="https://t.me/derixiji" class="contact-messenger-link" target="_blank" rel="noopener noreferrer">@derixiji</a>.</p>
+        
+        <div class="shop-category shop-category--featured">
+          <h3 class="shop-category-title"><span class="shop-category-tag">KIT</span> Готовые комплекты</h3>
+          <p class="shop-category-lead">Собранные связки — быстрый старт без подбора деталей.</p>
+          <div class="shop-grid shop-grid--duo">
+            
+          <article class="shop-card panel shop-card--premium shop-card--hit" data-product-id="kit-starter" data-shop-emoji="🎁">
+            <span class="shop-badge-hit" aria-hidden="true">Хит продаж</span>
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/kit-starter.png" alt="Набор новичка (RTL-SDR + антенна + кабель)" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">🎁</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>Набор новичка (RTL-SDR + антенна + кабель)</h3>
+            <p class="shop-card-desc">RTL-SDR V4, телескоп, кабель и переходник</p>
+            <p class="shop-price">4 500 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="kit-starter">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="shop-card panel shop-card--premium shop-card--hit" data-product-id="kit-adsb" data-shop-emoji="✈️">
+            <span class="shop-badge-hit" aria-hidden="true">Хит продаж</span>
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/kit-adsb.png" alt="Набор для авиации (ADS-B)" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">✈️</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>Набор для авиации (ADS-B)</h3>
+            <p class="shop-card-desc">RTL-SDR, «Паук» 1090 МГц и FM Block</p>
+            <p class="shop-price">5 200 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="kit-adsb">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+          </div>
+        </div>
+        
+        <div class="shop-category">
+          <h3 class="shop-category-title"><span class="shop-category-tag">RX</span> Приёмники SDR</h3>
+          
+          <div class="shop-grid">
+            
+          <article class="shop-card panel shop-card--premium" data-product-id="rtl-sdr-v4" data-shop-emoji="📻">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/rtl-sdr.png" alt="RTL-SDR Blog V4 (с антенной)" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">📻</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>RTL-SDR Blog V4 (с антенной)</h3>
+            <p class="shop-card-desc">Для старта, 24 МГц – 1.7 ГГц</p>
+            <p class="shop-price">3 800 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="rtl-sdr-v4">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="shop-card panel shop-card--premium" data-product-id="hackrf" data-shop-emoji="📡">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/hackrf.png" alt="HackRF One (трансивер)" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">📡</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>HackRF One (трансивер)</h3>
+            <p class="shop-card-desc">1 МГц – 6 ГГц, передача и приём</p>
+            <p class="shop-price">22 500 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="hackrf">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="shop-card panel shop-card--premium" data-product-id="hackrf-pro" data-shop-emoji="📡">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/hackrf-pro.png" alt="HackRF Pro" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">📡</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>HackRF Pro</h3>
+            <p class="shop-card-desc">Флагманский трансивер, расширенная полоса и стабильный TX/RX</p>
+            <p class="shop-price">34 900 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="hackrf-pro">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="shop-card panel shop-card--premium" data-product-id="rsp1b" data-shop-emoji="🎛️">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/rsp1b.png" alt="SDRplay RSP1B" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">🎛️</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>SDRplay RSP1B</h3>
+            <p class="shop-card-desc">14-бит АЦП, отличный приём</p>
+            <p class="shop-price">18 500 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="rsp1b">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="shop-card panel shop-card--premium" data-product-id="airspy-mini" data-shop-emoji="📶">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/airspy-mini.png" alt="Airspy Mini" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">📶</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>Airspy Mini</h3>
+            <p class="shop-card-desc">Сверхбыстрый приём на УКВ</p>
+            <p class="shop-price">12 000 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="airspy-mini">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+          </div>
+        </div>
+        
+        <div class="shop-category">
+          <h3 class="shop-category-title"><span class="shop-category-tag">HF</span> Апконвертеры (для КВ)</h3>
+          
+          <div class="shop-grid">
+            
+          <article class="shop-card panel shop-card--premium" data-product-id="upconv-ham-it-up" data-shop-emoji="⬆️">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/upconv-ham-it-up.png" alt="Апконвертер Ham It Up v1.3" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">⬆️</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>Апконвертер Ham It Up v1.3</h3>
+            <p class="shop-card-desc">0.5–30 МГц, LNA, через Bias-T</p>
+            <p class="shop-price">4 800 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="upconv-ham-it-up">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="shop-card panel shop-card--premium" data-product-id="upconv-spyverter" data-shop-emoji="🕵️">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/upconv-spyverter.png" alt="Апконвертер SpyVerter R2" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">🕵️</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>Апконвертер SpyVerter R2</h3>
+            <p class="shop-card-desc">Upconverter с усиленной фильтрацией</p>
+            <p class="shop-price">6 500 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="upconv-spyverter">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+          </div>
+        </div>
+        
+        <div class="shop-category">
+          <h3 class="shop-category-title"><span class="shop-category-tag">ANT</span> Антенны</h3>
+          
+          <div class="shop-grid">
+            
+          <article class="shop-card panel shop-card--premium" data-product-id="telescope-sma" data-shop-emoji="📏">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/telescope-sma.png" alt="Телескопическая антенна SMA" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">📏</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>Телескопическая антенна SMA</h3>
+            <p class="shop-card-desc">Универсальная</p>
+            <p class="shop-price">450 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="telescope-sma">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="shop-card panel shop-card--premium" data-product-id="mla-30" data-shop-emoji="🔄">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/mla-30.png" alt="Магнитная рамка MLA-30+" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">🔄</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>Магнитная рамка MLA-30+</h3>
+            <p class="shop-card-desc">Для коротких волн</p>
+            <p class="shop-price">4 200 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="mla-30">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="shop-card panel shop-card--premium" data-product-id="spider-1090" data-shop-emoji="🕷️">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/antenna-spider.png" alt="Антенна "Паук" 1090 МГц" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">🕷️</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>Антенна "Паук" 1090 МГц</h3>
+            <p class="shop-card-desc">Для самолётов ADS-B</p>
+            <p class="shop-price">800 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="spider-1090">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="shop-card panel shop-card--premium" data-product-id="discone" data-shop-emoji="📡">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/discone.png" alt="Дискоконусная антенна" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">📡</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>Дискоконусная антенна</h3>
+            <p class="shop-card-desc">25 МГц – 3 ГГц</p>
+            <p class="shop-price">6 500 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="discone">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="shop-card panel shop-card--premium" data-product-id="v-dipole-137" data-shop-emoji="🛰️">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/v-dipole-137.png" alt="Антенна V-диполь 137 МГц" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">🛰️</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>Антенна V-диполь 137 МГц</h3>
+            <p class="shop-card-desc">NOAA / Meteor, размах 109 см</p>
+            <p class="shop-price">1 500 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="v-dipole-137">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="shop-card panel shop-card--premium" data-product-id="long-wire-kv" data-shop-emoji="📏">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/long-wire-kv.png" alt="КВ антенна «Длинный провод» (Long Wire)" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">📏</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>КВ антенна «Длинный провод» (Long Wire)</h3>
+            <p class="shop-card-desc">15 м провода, SMA, крепления</p>
+            <p class="shop-price">1 800 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="long-wire-kv">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+          </div>
+        </div>
+        
+        <div class="shop-category">
+          <h3 class="shop-category-title"><span class="shop-category-tag">RF</span> Усилители и фильтры</h3>
+          
+          <div class="shop-grid">
+            
+          <article class="shop-card panel shop-card--premium" data-product-id="lna-lana" data-shop-emoji="📶">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/lna-lana.png" alt="МШУ (LNA) Nooelec LaNA" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">📶</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>МШУ (LNA) Nooelec LaNA</h3>
+            <p class="shop-card-desc">20 дБ, 50 МГц – 4 ГГц, Bias-T</p>
+            <p class="shop-price">3 900 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="lna-lana">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="shop-card panel shop-card--premium" data-product-id="fm-block" data-shop-emoji="🚫">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/fm-block.png" alt="Фильтр-пробка (FM Block) 88–108 МГц" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">🚫</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>Фильтр-пробка (FM Block) 88–108 МГц</h3>
+            <p class="shop-card-desc">Подавление FM до 30 дБ, SMA</p>
+            <p class="shop-price">1 200 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="fm-block">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="shop-card panel shop-card--premium" data-product-id="atten-10db" data-shop-emoji="🛡️">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/atten-10db.png" alt="Аттенюатор 10 дБ" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">🛡️</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>Аттенюатор 10 дБ</h3>
+            <p class="shop-card-desc">До 2 Вт, защита входа SDR</p>
+            <p class="shop-price">900 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="atten-10db">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+          </div>
+        </div>
+        
+        <div class="shop-category">
+          <h3 class="shop-category-title"><span class="shop-category-tag">ACC</span> Аксессуары и кабели</h3>
+          
+          <div class="shop-grid">
+            
+          <article class="shop-card panel shop-card--premium" data-product-id="sma-bnc" data-shop-emoji="🔌">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/sma-bnc.png" alt="Переходник SMA (папа) — BNC (мама)" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">🔌</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>Переходник SMA (папа) — BNC (мама)</h3>
+            <p class="shop-card-desc">Для подключения антенн и приборов</p>
+            <p class="shop-price">350 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="sma-bnc">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="shop-card panel shop-card--premium" data-product-id="atten-20db" data-shop-emoji="🛡️">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/atten-20db.png" alt="Аттенюатор 20 дБ" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">🛡️</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>Аттенюатор 20 дБ</h3>
+            <p class="shop-card-desc">Защита HackRF от перегрузки</p>
+            <p class="shop-price">1 200 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="atten-20db">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="shop-card panel shop-card--premium" data-product-id="cable-sma-1m" data-shop-emoji="🧵">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/cable-sma-1m.png" alt="Кабель SMA — SMA (1 метр)" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">🧵</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>Кабель SMA — SMA (1 метр)</h3>
+            <p class="shop-card-desc">Низкие потери, готовое решение</p>
+            <p class="shop-price">600 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="cable-sma-1m">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="shop-card panel shop-card--premium" data-product-id="bias-t" data-shop-emoji="⚡">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/bias-t.png" alt="Bias-T (инжектор питания)" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">⚡</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>Bias-T (инжектор питания)</h3>
+            <p class="shop-card-desc">USB, питание активных антенн по коаксиалу</p>
+            <p class="shop-price">1 900 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="bias-t">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="shop-card panel shop-card--premium" data-product-id="mcx-sma" data-shop-emoji="🔌">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/mcx-sma.png" alt="Переходник MCX (папа) — SMA (мама)" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">🔌</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>Переходник MCX (папа) — SMA (мама)</h3>
+            <p class="shop-card-desc">Для RTL-SDR с разъёмом MCX</p>
+            <p class="shop-price">350 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="mcx-sma">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="shop-card panel shop-card--premium" data-product-id="ferrite-rings" data-shop-emoji="🧲">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/ferrite-rings.png" alt="Ферритовые кольца (набор 5 шт.)" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">🧲</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>Ферритовые кольца (набор 5 шт.)</h3>
+            <p class="shop-card-desc">Помехи от USB-кабеля на приёмник</p>
+            <p class="shop-price">400 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="ferrite-rings">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+          </div>
+        </div>
+        
+        <div class="shop-category">
+          <h3 class="shop-category-title"><span class="shop-category-tag">MOD</span> Расширения и корпуса</h3>
+          
+          <div class="shop-grid">
+            
+          <article class="shop-card panel shop-card--premium" data-product-id="portapack-h4m" data-shop-emoji="📱">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/portapack-h4m.png" alt="PortaPack H4M (для HackRF)" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">📱</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>PortaPack H4M (для HackRF)</h3>
+            <p class="shop-card-desc">Экран, кнопки, microSD — полевой HackRF</p>
+            <p class="shop-price">9 500 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="portapack-h4m">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="shop-card panel shop-card--premium" data-product-id="hackrf-case" data-shop-emoji="🧊">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/hackrf-case.png" alt="Алюминиевый корпус для HackRF (с охлаждением)" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">🧊</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>Алюминиевый корпус для HackRF (с охлаждением)</h3>
+            <p class="shop-card-desc">Алюминий, термопрокладки в комплекте</p>
+            <p class="shop-price">2 800 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="hackrf-case">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="shop-card panel shop-card--premium" data-product-id="portapack-gps" data-shop-emoji="📍">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/portapack-gps.png" alt="GPS-модуль для PortaPack" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">📍</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>GPS-модуль для PortaPack</h3>
+            <p class="shop-card-desc">Навигация и геометки сигналов</p>
+            <p class="shop-price">2 200 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="portapack-gps">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+          </div>
+        </div>
+        
+        <div class="shop-category">
+          <h3 class="shop-category-title"><span class="shop-category-tag">＋</span> Дополнительно</h3>
+          
+          <div class="shop-grid">
+            
+          <article class="shop-card panel shop-card--premium" data-product-id="sma-adapter-kit" data-shop-emoji="🔧">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/sma-adapter-kit.png" alt="Набор переходников SMA (5 шт.)" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">🔧</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>Набор переходников SMA (5 шт.)</h3>
+            <p class="shop-card-desc">SMA папа-папа, папа-мама, BNC, U.FL</p>
+            <p class="shop-price">850 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="sma-adapter-kit">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="shop-card panel shop-card--premium" data-product-id="cable-rg58-5m" data-shop-emoji="🧵">
+            
+            <div class="shop-card-media">
+              <img class="shop-card-img" src="images/cable-rg58-5m.png" alt="Коаксиальный кабель RG-58 (5 метров)" loading="lazy" decoding="async" onerror="SDR_LAB.shopImageFallback(this)" />
+              <span class="shop-card-media-fallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon">🧵</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+            </div>
+            <h3>Коаксиальный кабель RG-58 (5 метров)</h3>
+            <p class="shop-card-desc">Низкие потери, вынос антенны наружу</p>
+            <p class="shop-price">1 200 ₽</p>
+            
+            <div class="shop-card-actions" data-product-id="cable-rg58-5m">
+              <button type="button" class="btn-auth-submit shop-add-btn">В корзину</button>
+              <div class="shop-qty-stepper is-hidden" hidden>
+                <button type="button" class="shop-qty-btn" data-action="dec" aria-label="Уменьшить количество">−</button>
+                <span class="shop-qty-label">1 шт.</span>
+                <button type="button" class="shop-qty-btn" data-action="inc" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+          </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <div class="auth-modal shop-product-modal" id="shopProductModal" aria-hidden="true">
+    <div class="auth-modal-backdrop" id="shopProductBackdrop"></div>
+    <div class="shop-product-dialog" role="dialog" aria-modal="true" aria-labelledby="shopProductTitle">
+      <button type="button" class="auth-modal-close shop-product-close" id="shopProductClose" aria-label="Закрыть">×</button>
+      <div class="shop-product-layout">
+        <div class="shop-product-visual" id="shopProductVisual">
+          <img class="shop-product-img" id="shopProductImg" alt="" onerror="SDR_LAB.shopImageFallback(this)" />
+          <span class="shop-product-fallback" id="shopProductEmojiFallback" data-shop-img-fallback hidden><span class="shop-photo-placeholder-icon" id="shopProductFallbackIcon">📻</span><span class="shop-photo-placeholder-text">Фото скоро</span></span>
+        </div>
+        <div class="shop-product-info">
+          <h2 class="shop-product-title" id="shopProductTitle">Товар</h2>
+          <p class="shop-product-price-lg" id="shopProductPrice">0 ₽</p>
+          <ul class="shop-product-specs" id="shopProductSpecs"></ul>
+          <p class="shop-product-desc" id="shopProductDesc"></p>
+          <div class="shop-product-modal-actions" id="shopProductActions"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="auth-modal" id="authModal" aria-hidden="true">
+    <div class="auth-modal-backdrop" id="authModalBackdrop"></div>
+    <div class="auth-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="authModalTitle">
+      <button type="button" class="auth-modal-close" id="authModalClose" aria-label="Закрыть">×</button>
+      <div class="auth-tabs" role="tablist">
+        <button type="button" class="auth-tab is-active" data-auth-tab="login" role="tab" aria-selected="true">Вход</button>
+        <button type="button" class="auth-tab" data-auth-tab="register" role="tab" aria-selected="false">Регистрация</button>
+      </div>
+      <form id="authLoginForm" class="auth-panel is-active" data-auth-panel="login">
+        <h2 class="auth-modal-title" id="authModalTitle">Вход в SDR_LAB</h2>
+        <label class="auth-label" for="loginEmail">Email</label>
+        <input class="auth-input" type="email" id="loginEmail" name="email" required autocomplete="email" />
+        <label class="auth-label" for="loginPass">Пароль</label>
+        <input class="auth-input" type="password" id="loginPass" name="password" required autocomplete="current-password" />
+        <button type="submit" class="btn-auth-submit">Войти</button>
+      </form>
+      <form id="authRegisterForm" class="auth-panel" data-auth-panel="register" hidden>
+        <h2 class="auth-modal-title">Регистрация</h2>
+        <label class="auth-label" for="regName">Имя</label>
+        <input class="auth-input" type="text" id="regName" name="name" required autocomplete="name" />
+        <label class="auth-label" for="regEmail">Email</label>
+        <input class="auth-input" type="email" id="regEmail" name="email" required autocomplete="email" />
+        <label class="auth-label" for="regPass">Пароль</label>
+        <input class="auth-input" type="password" id="regPass" name="password" required autocomplete="new-password" minlength="4" />
+        <span class="auth-label">Аватар</span>
+        <div class="auth-avatar-picker" role="radiogroup" aria-label="Выбор аватарки">
+          <label class="auth-avatar-option"><input type="radio" name="regAvatar" value="📡" checked /> 📡</label>
+          <label class="auth-avatar-option"><input type="radio" name="regAvatar" value="🛰️" /> 🛰️</label>
+          <label class="auth-avatar-option"><input type="radio" name="regAvatar" value="📻" /> 📻</label>
+        </div>
+        <button type="submit" class="btn-auth-submit btn-auth-submit--register">Зарегистрироваться</button>
+      </form>
+    </div>
+  </div>
+  <div class="auth-toast" id="authToast" role="status" aria-live="polite"></div>
+
+
+  <div class="profile-cabinet" id="profileCabinet" aria-hidden="true">
+    <div class="profile-cabinet-backdrop" id="profileCabinetBackdrop"></div>
+    <div class="profile-cabinet-shell wrap">
+      <button type="button" class="profile-cabinet-close" id="profileCabinetClose" aria-label="Закрыть кабинет">×</button>
+      <p class="profile-cabinet-tag">// user_dashboard.sys</p>
+      <div class="profile-dashboard">
+        <aside class="profile-card panel">
+          <div class="profile-avatar" id="profileAvatar" aria-hidden="true">SDR</div>
+          <h2 class="profile-name" id="profileName">Оператор</h2>
+          <p class="profile-since" id="profileSince">В эфире с: —</p>
+        </aside>
+        <div class="profile-dashboard-grid">
+          <section class="profile-panel panel">
+            <h3 class="profile-panel-title">Мой сетап</h3>
+            <ul class="profile-equipment">
+              <li><label class="profile-check"><input type="checkbox" id="equipHackrf" data-equip="hackrf" /> HackRF One</label></li>
+              <li><label class="profile-check"><input type="checkbox" id="equipSpider" data-equip="spider" /> Антенна-паук</label></li>
+              <li><label class="profile-check"><input type="checkbox" id="equipMagloop" data-equip="magloop" /> Магнитная рамка</label></li>
+            </ul>
+          </section>
+          <section class="profile-panel panel">
+            <h3 class="profile-panel-title">Избранные частоты</h3>
+            <ul class="profile-freq-list" id="profileFreqList"></ul>
+            <form class="profile-freq-form" id="profileFreqForm">
+              <input class="auth-input profile-freq-input" type="text" id="profileFreqInput" placeholder="118.700 МГц — Авиация" required />
+              <button type="submit" class="btn-auth-submit profile-freq-add">Добавить</button>
+            </form>
+          </section>
+          <section class="profile-panel panel profile-panel--achievements">
+            <h3 class="profile-panel-title">Достижения</h3>
+            <div class="profile-achievements">
+              <div class="profile-achievement" data-achievement="listener" title="Включили плеер «Послушать эфир»">
+                <span class="profile-achievement-icon" aria-hidden="true">▶</span>
+                <span class="profile-achievement-label">Слушатель</span>
+              </div>
+              <div class="profile-achievement" data-achievement="engineer" title="Рассчитали антенну">
+                <span class="profile-achievement-icon" aria-hidden="true">λ</span>
+                <span class="profile-achievement-label">Инженер</span>
+              </div>
+              <div class="profile-achievement" data-achievement="cartographer" title="Открыли карту вышек">
+                <span class="profile-achievement-icon" aria-hidden="true">🗺</span>
+                <span class="profile-achievement-label">Картограф</span>
+              </div>
+            </div>
+          </section>
+        </div>
+        <footer class="profile-dashboard-footer">
+          <button type="button" class="btn-auth-logout profile-logout" id="profileLogout">Выйти</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="auth-modal cart-modal" id="cartModal" aria-hidden="true">
+    <div class="auth-modal-backdrop" id="cartModalBackdrop"></div>
+    <div class="auth-modal-dialog cart-dialog" role="dialog" aria-modal="true" aria-labelledby="cartModalTitle">
+      <button type="button" class="auth-modal-close" id="cartModalClose" aria-label="Закрыть">×</button>
+      <h2 class="auth-modal-title" id="cartModalTitle">Корзина</h2>
+      <ul class="cart-list" id="cartList"></ul>
+      <p class="cart-total" id="cartTotal">Итого: 0 ₽</p>
+      <button type="button" class="btn-auth-submit" id="cartCheckoutBtn">Оформить заказ</button>
+    </div>
+  </div>
+
+
+  <div class="auth-modal" id="orderContactModal" aria-hidden="true">
+    <div class="auth-modal-backdrop" id="orderContactBackdrop"></div>
+    <div class="auth-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="orderContactTitle">
+      <button type="button" class="auth-modal-close" id="orderContactClose" aria-label="Закрыть">×</button>
+      <h2 class="auth-modal-title" id="orderContactTitle">Оформление заказа</h2>
+      <p class="order-contact-text">
+        Спасибо за интерес! Чтобы купить товар или задать вопрос, напишите мне в Telegram:
+        <a href="https://t.me/derixiji" class="contact-messenger-link" target="_blank" rel="noopener noreferrer">@derixiji</a>
+        или в
+        <a href="https://max.ru/" class="contact-messenger-link contact-messenger-max" target="_blank" rel="noopener noreferrer">MAX</a>.
+      </p>
+      <button type="button" class="btn-auth-submit btn-auth-submit--register" id="orderContactOk">Понятно</button>
+    </div>
+  </div>
+
+
+  <button type="button" class="mini-chat-fab" id="miniChatFab" aria-label="Открыть чат" aria-expanded="false">💬</button>
+  <div class="mini-chat-panel" id="miniChatPanel" aria-hidden="true" role="dialog" aria-labelledby="miniChatTitle">
+    <div class="mini-chat-header">
+      <h2 class="mini-chat-title" id="miniChatTitle">Мини-чат</h2>
+      <button type="button" class="mini-chat-close" id="miniChatClose" aria-label="Закрыть">×</button>
+    </div>
+    <p class="mini-chat-intro">Спасибо за интерес! Чтобы купить товар или задать вопрос, напишите мне в Telegram:
+        <a href="https://t.me/derixiji" class="contact-messenger-link" target="_blank" rel="noopener noreferrer">@derixiji</a>
+        или в
+        <a href="https://max.ru/" class="contact-messenger-link contact-messenger-max" target="_blank" rel="noopener noreferrer">MAX</a>.</p>
+    <form class="mini-chat-form" id="miniChatForm">
+      <label class="auth-label" for="miniChatName">Имя</label>
+      <input class="auth-input" type="text" id="miniChatName" name="name" required autocomplete="name" />
+      <label class="auth-label" for="miniChatMsg">Сообщение</label>
+      <textarea class="auth-input mini-chat-textarea" id="miniChatMsg" name="message" rows="3" required></textarea>
+      <button type="submit" class="btn-auth-submit">Отправить</button>
+    </form>
+  </div>
+
+  <footer>
+
+      <div class="footer-status weather-widget weather-widget--footer" aria-live="polite">
+        <form class="weather-widget-form" id="weatherCityFormFooter" data-weather-form>
+          <div class="weather-widget-controls">
+            <select class="weather-widget-select" id="weatherCitySelectFooter" data-weather-select aria-label="Выбор города">
+              <option value="Казань" selected>Казань</option>
+              <option value="Москва">Москва</option>
+              <option value="Санкт-Петербург">Санкт-Петербург</option>
+              <option value="Новосибирск">Новосибирск</option>
+              <option value="Екатеринбург">Екатеринбург</option>
+              <option value="Сочи">Сочи</option>
+            </select>
+            <input class="weather-widget-input" type="text" id="weatherCityInputFooter" data-weather-input placeholder="Другой город" autocomplete="off" />
+            <button type="submit" class="weather-widget-find">Найти</button>
+          </div>
+        </form>
+        <div class="weather-widget-readout">
+          <span class="weather-display-icon" data-weather-part="icon" aria-hidden="true">⏳</span>
+          <span class="weather-display-city" data-weather-part="city">Казань</span>
+          <span class="weather-display-time" data-weather-part="time" id="footerClock">--:--</span>
+          <span class="weather-display-temp" data-weather-part="temp">…</span>
+        </div>
+        <p class="weather-widget-error is-hidden" id="weatherErrorFooter" data-weather-error role="alert"></p>
+      </div>
+    <div class="footer-contacts">
+      <a href="tel:+79274030625" class="footer-contact-link">+7 927 403 06 25</a>
+      <span class="footer-contacts-sep" aria-hidden="true">·</span>
+      <a href="https://t.me/derixiji" class="footer-contact-link footer-contact-tg" target="_blank" rel="noopener noreferrer">Telegram</a>
+      <span class="footer-contacts-sep" aria-hidden="true">·</span>
+      <a href="https://wa.me/79274030625" class="footer-contact-link footer-contact-wa" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <span class="footer-contacts-sep" aria-hidden="true">·</span>
+      <a href="https://max.ru/" class="footer-contact-link footer-contact-max" target="_blank" rel="noopener noreferrer">MAX</a>
+    </div>
+    © 2026 <span>SDR Lab</span>. Сделано с любовью к радиоэфиру.
+  </footer>
+
+  <script src="shop-products.js"></script>
+  <script src="script.js"></script>
+  <script src="fx-premium.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+# Зависимости
+node_modules/
+
+# Секреты и локальная конфигурация (никогда в репозиторий)
+.env
+.env.*
+.env.local
+*.pem
+*.key
+*.p12
+credentials.json
+secrets/
+**/api-keys.local.*
+
+# IDE / агент (не часть сайта)
+.cursor/
+.vscode/
+*.code-workspace
+
+# Сборка и исходники каталога — на Pages нужны только готовые HTML/shop-products.js
+scripts/
+_legacy-single-page.html
+
+# Внутренние исходники коллажей (на витрине не используются)
+images/_*
+images/README.txt
+
+# Тестовые вышки (карта использует towers-kazan.*)
+towers.geojson
+towers-data.js
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Логи
+*.log
+npm-debug.log*

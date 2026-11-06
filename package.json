@@ -1,0 +1,14 @@
+{
+  "name": "sdr-lab",
+  "private": true,
+  "description": "SDR_LAB landing — генератор тестовых вышек для карты",
+  "scripts": {
+    "towers": "node scripts/generate-towers.js",
+    "towers:1k": "node scripts/generate-towers.js --count 1000",
+    "towers:10k": "node scripts/generate-towers.js --count 10000",
+    "towers:js": "node scripts/generate-towers.js --count 80",
+    "build:site": "node scripts/build-multipage.js",
+    "serve": "npx --yes serve .",
+    "towers:kazan": "node scripts/fetch-osm-towers-kazan.js"
+  }
+}

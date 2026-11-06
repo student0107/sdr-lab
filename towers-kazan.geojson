@@ -1,0 +1,4935 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-872565044",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 872565044
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.030519,
+          55.8245309
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-1804767945",
+        "name": "Ростелеком",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 1804767945
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0292827,
+          55.8245513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-2014545643",
+        "name": "tower",
+        "city": "Казань",
+        "band": "мачта (OSM)",
+        "osmId": 2014545643
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9737139,
+          55.7761022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-2014545644",
+        "name": "tower",
+        "city": "Казань",
+        "band": "мачта (OSM)",
+        "osmId": 2014545644
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9742027,
+          55.7773843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-2065726774",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 2065726774
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1129136,
+          55.6374568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-2520256470",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 2520256470
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2286199,
+          55.7652756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-2824684375",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 2824684375
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1016932,
+          55.8233133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-2922232125",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 2922232125
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9362732,
+          55.6490907
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-3041167992",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 3041167992
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9515034,
+          55.634419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-3430705974",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 3430705974
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1511096,
+          55.6219812
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-3470959974",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 3470959974
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9458521,
+          55.6936631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-3607876181",
+        "name": "mast",
+        "city": "Казань",
+        "band": "мачта (OSM)",
+        "osmId": 3607876181
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9277505,
+          55.7784729
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-3607876182",
+        "name": "mast",
+        "city": "Казань",
+        "band": "мачта (OSM)",
+        "osmId": 3607876182
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9300334,
+          55.7776174
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-4174658606",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 4174658606
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1615987,
+          55.9127244
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-4401206082",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 4401206082
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1396517,
+          55.6254271
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-4401206088",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 4401206088
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3002628,
+          55.8657728
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-4640627700",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 4640627700
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.137958,
+          55.8317654
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-4724696336",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 4724696336
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1706697,
+          55.8166995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-4724696337",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 4724696337
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1735869,
+          55.8184598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-4724696338",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 4724696338
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1767613,
+          55.8173409
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-4724696339",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 4724696339
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1742548,
+          55.8160336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-4787676059",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 4787676059
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0910281,
+          55.8319248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-4787676060",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 4787676060
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1842518,
+          55.80772
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-4903933610",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 4903933610
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2936818,
+          55.6477467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-4903933611",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 4903933611
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2952124,
+          55.6469921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-4903933612",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 4903933612
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2954177,
+          55.6470071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-4903934061",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 4903934061
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2873634,
+          55.6479619
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-5632693705",
+        "name": "Сотовая",
+        "city": "Казань",
+        "band": "Сотовая",
+        "osmId": 5632693705
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0731699,
+          55.8083562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-6469802978",
+        "name": "tower",
+        "city": "Казань",
+        "band": "мачта (OSM)",
+        "osmId": 6469802978
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.978872,
+          55.8680198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-7166426260",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 7166426260
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2073659,
+          55.7570766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-7566237645",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 7566237645
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9577862,
+          55.6989829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-7872213970",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 7872213970
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2368978,
+          55.8265412
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-7872213971",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 7872213971
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.237437,
+          55.8269977
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-7934494377",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 7934494377
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1672711,
+          55.7927464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-7953944169",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 7953944169
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1756786,
+          55.7965624
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-8001656200",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 8001656200
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2068008,
+          55.9035304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-8038254716",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 8038254716
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0902742,
+          55.8306024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-8345875844",
+        "name": "mast",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 8345875844
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1019167,
+          55.8079326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-8663720908",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 8663720908
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3968916,
+          55.7475532
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-8686277254",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 8686277254
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3929568,
+          55.7385123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9231769552",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 9231769552
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3566692,
+          55.8923991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9318832025",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 9318832025
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9767075,
+          55.765016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9350452572",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9350452572
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.362857,
+          55.7059173
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9350452573",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9350452573
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3629402,
+          55.7061259
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9350452574",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9350452574
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3628651,
+          55.7060533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9350452575",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9350452575
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3623421,
+          55.7056453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9353372535",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9353372535
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.199473,
+          55.6095523
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9509698547",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 9509698547
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3908105,
+          55.6219768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9511118493",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 9511118493
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.212707,
+          55.8588157
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9579331518",
+        "name": "telecommunication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9579331518
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0995511,
+          55.8224104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9649431922",
+        "name": "telecommunication",
+        "city": "Казань",
+        "band": "telecommunication",
+        "osmId": 9649431922
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0773648,
+          55.806781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9667794714",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9667794714
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.264052,
+          55.7817425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9667796525",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9667796525
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2647901,
+          55.7794964
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9667796534",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9667796534
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2592138,
+          55.7670108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9685164634",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9685164634
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1488675,
+          55.7365668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9717968033",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9717968033
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2073573,
+          55.9049814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9735291117",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 9735291117
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9511755,
+          55.6349444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9737065526",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9737065526
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1812393,
+          55.7319039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9737234656",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9737234656
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1313234,
+          55.8496855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9740907409",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9740907409
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1587586,
+          55.8260229
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9781217116",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9781217116
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2190249,
+          55.7886485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9784665602",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9784665602
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.320285,
+          55.9069254
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9784665607",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9784665607
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3206391,
+          55.9066909
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9784665615",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9784665615
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3214263,
+          55.9063323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9784834923",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9784834923
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1842771,
+          55.8215571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9784835053",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9784835053
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2233111,
+          55.8644551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9790544153",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9790544153
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2981557,
+          55.9042381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9805739069",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9805739069
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1041982,
+          55.8313146
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9805739095",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9805739095
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0967417,
+          55.8312069
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9879259579",
+        "name": "telecommunication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9879259579
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0907936,
+          55.8278208
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9893888568",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 9893888568
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1371219,
+          55.775691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9942604425",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9942604425
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1884823,
+          55.8121102
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-9954466698",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 9954466698
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1851919,
+          55.7941308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10005971550",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 10005971550
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3974997,
+          55.8776866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10005971551",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 10005971551
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.397392,
+          55.8777574
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10006374383",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 10006374383
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.170643,
+          55.7374455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10055593330",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 10055593330
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0405702,
+          55.8801715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10090077915",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 10090077915
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9858618,
+          55.9099578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10109788192",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 10109788192
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9240932,
+          55.721867
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10110584023",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 10110584023
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9887479,
+          55.7563851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10110585920",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 10110585920
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9742076,
+          55.7342856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10110585921",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 10110585921
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9737275,
+          55.7343369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10110585922",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 10110585922
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9732206,
+          55.7343127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10117441280",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 10117441280
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3417218,
+          55.7961761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10601067665",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 10601067665
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1981121,
+          55.8329579
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10679057798",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 10679057798
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0927833,
+          55.836037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10697751969",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 10697751969
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.068101,
+          55.8688897
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10697772919",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 10697772919
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0691686,
+          55.8780719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10697772920",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 10697772920
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0693456,
+          55.8780704
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10699094044",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 10699094044
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1284007,
+          55.8362847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10701301106",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 10701301106
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0869865,
+          55.7025727
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10790119899",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 10790119899
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2264158,
+          55.8702758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10899010547",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 10899010547
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0566591,
+          55.8189353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10960140793",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 10960140793
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1020551,
+          55.8080404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10960192413",
+        "name": "lighting;communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 10960192413
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.154065,
+          55.7965987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10961229960",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 10961229960
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1664782,
+          55.7304598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10961229972",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 10961229972
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1487957,
+          55.7312271
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10963661672",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 10963661672
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1286885,
+          55.7553159
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-10977523577",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 10977523577
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0868306,
+          55.8120658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11027695553",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11027695553
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9628876,
+          55.8385372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11166802476",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11166802476
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0814048,
+          55.8139235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11187518970",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11187518970
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2139624,
+          55.7110762
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11228502521",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11228502521
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0905163,
+          55.8401727
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11228524323",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11228524323
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0901822,
+          55.8406635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11258319960",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 11258319960
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9621733,
+          55.8394398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11268934075",
+        "name": "mast",
+        "city": "Казань",
+        "band": "мачта (OSM)",
+        "osmId": 11268934075
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2706037,
+          55.8020561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11268934084",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11268934084
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2724409,
+          55.8025429
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11276906407",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11276906407
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0012859,
+          55.8015907
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11277110524",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11277110524
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0584202,
+          55.8051825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11307687211",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11307687211
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3193817,
+          55.8040222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11308054442",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11308054442
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2188039,
+          55.6634882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11310144874",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11310144874
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2627677,
+          55.63383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11527383059",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11527383059
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1407011,
+          55.8349066
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11527383060",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11527383060
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1407316,
+          55.8347068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11527383061",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11527383061
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1407113,
+          55.8348255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11618723861",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11618723861
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1775848,
+          55.7934699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11685122160",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 11685122160
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2314046,
+          55.8007543
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11689930336",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11689930336
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1261949,
+          55.8363779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11689969772",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11689969772
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1260467,
+          55.8365822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11689977023",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11689977023
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1487184,
+          55.8280216
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11689985071",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11689985071
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1491808,
+          55.8276611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11690213115",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11690213115
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1510986,
+          55.8272206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11728712784",
+        "name": "tower",
+        "city": "Казань",
+        "band": "мачта (OSM)",
+        "osmId": 11728712784
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0794253,
+          55.8673275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11733483963",
+        "name": "tower",
+        "city": "Казань",
+        "band": "мачта (OSM)",
+        "osmId": 11733483963
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1426468,
+          55.8282556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11738473706",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11738473706
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1851338,
+          55.8152494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11740361117",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11740361117
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1832693,
+          55.8092822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11789649506",
+        "name": "mast",
+        "city": "Казань",
+        "band": "мачта (OSM)",
+        "osmId": 11789649506
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0262017,
+          55.8292922
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11804308075",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11804308075
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0795177,
+          55.8569125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11813217884",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11813217884
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0800047,
+          55.8332885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11849708981",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11849708981
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2012674,
+          55.7456231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11878428660",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11878428660
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0806566,
+          55.8374344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11911754132",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11911754132
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1310647,
+          55.7998851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-11999322937",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 11999322937
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0783079,
+          55.8315867
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12060821601",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12060821601
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1696713,
+          55.8001741
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12061155347",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12061155347
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2654181,
+          55.7748522
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12061155349",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12061155349
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2645031,
+          55.7752595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12084550275",
+        "name": "mast",
+        "city": "Казань",
+        "band": "мачта (OSM)",
+        "osmId": 12084550275
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0691942,
+          55.8035317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12108259133",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12108259133
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1818478,
+          55.8129545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12119788007",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12119788007
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0771951,
+          55.821609
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12140566473",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12140566473
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0686134,
+          55.836897
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12142216795",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 12142216795
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2582626,
+          55.7895756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12152204515",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12152204515
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2221366,
+          55.7924948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12154195425",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12154195425
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1743447,
+          55.7594392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12162477575",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 12162477575
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1901293,
+          55.8582336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12170111444",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12170111444
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1261311,
+          55.9177548
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12243303297",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12243303297
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2580446,
+          55.8012386
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12243849392",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12243849392
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2594421,
+          55.8008301
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12287629742",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12287629742
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2210161,
+          55.7967303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12316322746",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12316322746
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3727517,
+          55.8012357
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12316322747",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12316322747
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3731031,
+          55.8012749
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12330472000",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12330472000
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2251657,
+          55.8488628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12360028241",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12360028241
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0407385,
+          55.8248357
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12379043523",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 12379043523
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2552561,
+          55.7932199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12388939664",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12388939664
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0867863,
+          55.8346369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12525871818",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12525871818
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2200961,
+          55.771006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12586950884",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12586950884
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1087339,
+          55.8275719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12615707254",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12615707254
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1958306,
+          55.7612227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12644029118",
+        "name": "mast",
+        "city": "Казань",
+        "band": "мачта (OSM)",
+        "osmId": 12644029118
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2799203,
+          55.6108805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12646586127",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12646586127
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2159712,
+          55.8022986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12647189188",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12647189188
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2991385,
+          55.7415382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12647189189",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12647189189
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2976311,
+          55.7425287
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12679648732",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12679648732
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2324763,
+          55.651419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12679690795",
+        "name": "mast",
+        "city": "Казань",
+        "band": "мачта (OSM)",
+        "osmId": 12679690795
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2140137,
+          55.6570939
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12679690796",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12679690796
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2159909,
+          55.6587248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12728192301",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12728192301
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.328278,
+          55.7226926
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12728192314",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12728192314
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3262815,
+          55.7244794
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12734842988",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12734842988
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3159881,
+          55.7273472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12748363691",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12748363691
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1520085,
+          55.7655679
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12748363692",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12748363692
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1522872,
+          55.7657651
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12750788711",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12750788711
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2175739,
+          55.816405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12790411675",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12790411675
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0551846,
+          55.9108057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12790411676",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12790411676
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0549003,
+          55.9103345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12790411677",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12790411677
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0546142,
+          55.9103936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12827162008",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12827162008
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0592507,
+          55.8781289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12827162009",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 12827162009
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0593033,
+          55.8781336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12827162014",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 12827162014
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0588044,
+          55.8781374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-12922066871",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 12922066871
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2565731,
+          55.789698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13004288349",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13004288349
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1696567,
+          55.7998238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13007343199",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13007343199
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.085872,
+          55.8462817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13007359504",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13007359504
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0771267,
+          55.8386185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13007359505",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13007359505
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0740153,
+          55.8404748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13007359567",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13007359567
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0782961,
+          55.8315918
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13009831937",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13009831937
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1995392,
+          55.8406122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13009831938",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13009831938
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1993935,
+          55.8280898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13015505409",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13015505409
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1969607,
+          55.8179179
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13015505412",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13015505412
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2059491,
+          55.8513805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13015577338",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13015577338
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2208182,
+          55.8660877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13015578204",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13015578204
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1996181,
+          55.8551921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13019830228",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13019830228
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1018029,
+          55.7870312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13031038172",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13031038172
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9051421,
+          55.8180578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13031038173",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13031038173
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.90502,
+          55.8180687
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13041685614",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 13041685614
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0907239,
+          55.8277325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13046342304",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13046342304
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.148183,
+          55.7853632
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13049632369",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13049632369
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1475797,
+          55.7851261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13050821377",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13050821377
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1432767,
+          55.7842228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13060774917",
+        "name": "communication:mobile_phone",
+        "city": "Казань",
+        "band": "communication:mobile_phone",
+        "osmId": 13060774917
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0957712,
+          55.8177265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13063382122",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13063382122
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1206418,
+          55.8390569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13063598085",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13063598085
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3766907,
+          55.7572131
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13065168208",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13065168208
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.233645,
+          55.7447314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13076474297",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13076474297
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.165111,
+          55.8239816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13141652571",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13141652571
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0310586,
+          55.8646283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13149460411",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13149460411
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0673972,
+          55.7016326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13185598746",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13185598746
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2158972,
+          55.802475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13226463870",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13226463870
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9887686,
+          55.7582685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13314810217",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13314810217
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0826332,
+          55.869403
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13358365812",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13358365812
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1603578,
+          55.8280164
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13362473568",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13362473568
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3181232,
+          55.8934872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13362473569",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13362473569
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3184464,
+          55.8935414
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13364976935",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13364976935
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.161737,
+          55.7281613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13368144029",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13368144029
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0793234,
+          55.8425742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13374370350",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13374370350
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2692479,
+          55.761167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13374370351",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13374370351
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2693219,
+          55.7611934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13374370352",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13374370352
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2693869,
+          55.7612147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13374370354",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13374370354
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2418032,
+          55.7577564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13374370358",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13374370358
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2063966,
+          55.7384131
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13411348087",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13411348087
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2948211,
+          55.8022636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13621103146",
+        "name": "mast",
+        "city": "Казань",
+        "band": "мачта (OSM)",
+        "osmId": 13621103146
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1983651,
+          55.7269502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13621103147",
+        "name": "mast",
+        "city": "Казань",
+        "band": "мачта (OSM)",
+        "osmId": 13621103147
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.200602,
+          55.7260911
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13621202198",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13621202198
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1727403,
+          55.7208826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13653416361",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13653416361
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1511848,
+          55.7648441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13654046161",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13654046161
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1317645,
+          55.729024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13671675266",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13671675266
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9682793,
+          55.6993226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13671675273",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13671675273
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9690381,
+          55.6981238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13674278175",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13674278175
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9659865,
+          55.8977402
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13674278176",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13674278176
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9661066,
+          55.8977315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13675837589",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13675837589
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1060959,
+          55.8476904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13677078852",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13677078852
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3908869,
+          55.6219419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13679993483",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13679993483
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1965142,
+          55.8217332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13680070471",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13680070471
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1717711,
+          55.7895871
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13681024203",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13681024203
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2141676,
+          55.8470169
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13694661454",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13694661454
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.254814,
+          55.7672292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13694661465",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13694661465
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2475189,
+          55.7638594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13700867857",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13700867857
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2767986,
+          55.8054014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13701257596",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13701257596
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2853588,
+          55.8042497
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13703328403",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 13703328403
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2239339,
+          55.810692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13709692909",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13709692909
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1442919,
+          55.8448108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13709692951",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13709692951
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1328732,
+          55.8358185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13711234452",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13711234452
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0626376,
+          55.8008428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13722010146",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13722010146
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0839109,
+          55.8496216
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13722010169",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13722010169
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1109559,
+          55.8632244
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13737504466",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13737504466
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3237986,
+          55.8011153
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13758088107",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 13758088107
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3969611,
+          55.7474769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13788229554",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13788229554
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2356721,
+          55.8351965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13789124240",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13789124240
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2283002,
+          55.8212774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13794175617",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13794175617
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0165014,
+          55.8007812
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13794175618",
+        "name": "mast",
+        "city": "Казань",
+        "band": "мачта (OSM)",
+        "osmId": 13794175618
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0154839,
+          55.8007166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13794175619",
+        "name": "mast",
+        "city": "Казань",
+        "band": "мачта (OSM)",
+        "osmId": 13794175619
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0167491,
+          55.8006967
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13794370832",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13794370832
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0321889,
+          55.7997319
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13799784353",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13799784353
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2274983,
+          55.64432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13799784503",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13799784503
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2140799,
+          55.6881061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13799784509",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13799784509
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1929025,
+          55.6790776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13799784510",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13799784510
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1931287,
+          55.6792405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13803271642",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13803271642
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1930069,
+          55.7234306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13803737075",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13803737075
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1851517,
+          55.7092367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13805424756",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13805424756
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1488578,
+          55.7130985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13857091627",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13857091627
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0752488,
+          55.8485283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13912326423",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13912326423
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3116101,
+          55.8422822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13912326479",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13912326479
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3220273,
+          55.843695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13925874557",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13925874557
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3527851,
+          55.8879158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13925874558",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13925874558
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3529302,
+          55.887911
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13925874561",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13925874561
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3228406,
+          55.9050273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13925874572",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13925874572
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3025833,
+          55.9136208
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13925874573",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13925874573
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3016058,
+          55.9150809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13925874575",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13925874575
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.305195,
+          55.9178265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13925874576",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13925874576
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3054016,
+          55.9180324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13925874577",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13925874577
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3045416,
+          55.9184135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13952997231",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13952997231
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1683726,
+          55.7378763
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13957679433",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13957679433
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9437857,
+          55.77423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-13957679434",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 13957679434
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9437777,
+          55.7743628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-14008735536",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 14008735536
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.9629346,
+          55.7657723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-14019806908",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 14019806908
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3096494,
+          55.7216592
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-14021711792",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 14021711792
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3029918,
+          55.7542881
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-14021863109",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 14021863109
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3233151,
+          55.7155426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-14021863110",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 14021863110
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3235416,
+          55.7152156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-14021863111",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 14021863111
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3234142,
+          55.7150103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-14024593488",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 14024593488
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3853018,
+          55.7378494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-14024758790",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 14024758790
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3969211,
+          55.7475788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-14024758791",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 14024758791
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.3969855,
+          55.7475124
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-14086865345",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 14086865345
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0603117,
+          55.8225833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-14118712059",
+        "name": "mast",
+        "city": "Казань",
+        "band": "мачта (OSM)",
+        "osmId": 14118712059
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0427508,
+          55.8603514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-14133777614",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 14133777614
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1780885,
+          55.8089813
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-14143356007",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 14143356007
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1497947,
+          55.8690179
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-14143356021",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 14143356021
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1464033,
+          55.8727144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-14150176611",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 14150176611
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1360816,
+          55.7452471
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-node-14320326607",
+        "name": "communication",
+        "city": "Казань",
+        "band": "сотовая связь (OSM)",
+        "osmId": 14320326607
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.2528597,
+          55.8581431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-way-443007332",
+        "name": "tower",
+        "city": "Казань",
+        "band": "мачта (OSM)",
+        "osmId": 443007332
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1244019,
+          55.7466601
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-way-1304781861",
+        "name": "tower",
+        "city": "Казань",
+        "band": "мачта (OSM)",
+        "osmId": 1304781861
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.0691949,
+          55.8035325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-way-1416846575",
+        "name": "tower",
+        "city": "Казань",
+        "band": "мачта (OSM)",
+        "osmId": 1416846575
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1013016,
+          55.7871535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-way-1560747760",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 1560747760
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1817221,
+          55.7347855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "osm-way-1569570279",
+        "name": "communication",
+        "city": "Казань",
+        "band": "communication",
+        "osmId": 1569570279
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.1816281,
+          55.734807
+        ]
+      }
+    }
+  ]
+}

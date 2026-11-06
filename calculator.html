@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Калькулятор λ/4 — SDR_LAB" />
+  <title>SDR_LAB — Калькулятор антенны</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="calculator.html">
+  <div class="page-bg" aria-hidden="true">
+    <canvas id="neonParticlesCanvas" class="neon-particles-canvas" aria-hidden="true"></canvas>
+    <div class="waves">
+      <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+        <path d="M0,40 Q150,10 300,40 T600,40 T900,40 T1200,40" />
+      </svg>
+      <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+        <path d="M0,40 Q100,70 200,40 T400,40 T600,40 T800,40 T1200,40" />
+      </svg>
+      <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+        <path d="M0,40 Q200,5 400,40 T800,40 T1200,40" />
+      </svg>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="SDR_LAB — на главную">
+        <span class="logo-prompt" aria-hidden="true">&gt;</span>SDR_LAB<span class="cursor" aria-hidden="true"></span>
+      </a>
+      <nav class="site-nav" aria-label="Основное меню">
+        <ul class="nav-list" id="navMenu">
+          <li><a href="index.html" data-nav="index.html">Главная</a></li>
+          <li><a href="antennas.html" data-nav="antennas.html">Антенны</a></li>
+          <li><a href="software.html" data-nav="software.html">Софт</a></li>
+          <li><a href="shop.html" data-nav="shop.html">Магазин</a></li>
+          <li><a href="calculator.html" data-nav="calculator.html" class="nav-active" aria-current="page">Калькулятор</a></li>
+          <li><a href="map.html" data-nav="map.html">Карта</a></li>
+        </ul>
+      </nav>
+      <div class="header-aside">
+
+      <div class="weather-widget weather-widget--header" aria-live="polite">
+        <form class="weather-widget-form" id="weatherCityForm" data-weather-form>
+          <div class="weather-widget-controls">
+            <select class="weather-widget-select" id="weatherCitySelect" data-weather-select aria-label="Выбор города">
+              <option value="Казань" selected>Казань</option>
+              <option value="Москва">Москва</option>
+              <option value="Санкт-Петербург">Санкт-Петербург</option>
+              <option value="Новосибирск">Новосибирск</option>
+              <option value="Екатеринбург">Екатеринбург</option>
+              <option value="Сочи">Сочи</option>
+            </select>
+            <input class="weather-widget-input" type="text" id="weatherCityInput" data-weather-input placeholder="Другой город" autocomplete="off" />
+            <button type="submit" class="weather-widget-find">Найти</button>
+          </div>
+        </form>
+        <div class="weather-widget-readout">
+          <span class="weather-display-icon" data-weather-part="icon" aria-hidden="true">⏳</span>
+          <span class="weather-display-city" data-weather-part="city">Казань</span>
+          <span class="weather-display-time" data-weather-part="time" id="headerClock">--:--</span>
+          <span class="weather-display-temp" data-weather-part="temp">…</span>
+        </div>
+        <p class="weather-widget-error is-hidden" id="weatherError" data-weather-error role="alert"></p>
+      </div>
+
+      <div class="header-actions">
+        <button type="button" class="btn-cart" id="btnCartOpen" aria-label="Корзина">
+          <span class="cart-icon" aria-hidden="true">🛒</span>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <div class="header-auth" id="headerAuth">
+          <button type="button" class="btn-auth-open" id="btnAuthOpen">Войти</button>
+          <div class="header-auth-user is-hidden" id="headerAuthUser" hidden>
+            <button type="button" class="header-auth-greeting" id="headerAuthGreeting" title="Личный кабинет">Привет</button>
+            <button type="button" class="btn-auth-logout" id="btnAuthLogout">Выйти</button>
+          </div>
+        </div>
+      </div>
+        <button type="button" class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap content-section" id="calc">
+      <div class="panel reveal">
+        <span class="section-tag">// λ/4 calculator</span>
+        <h2>Калькулятор длины антенны</h2>
+        <p>
+          Введите частоту и выберите единицы — получите длину четвертьволнового штыря.
+        </p>
+        <form class="calc-form" id="antennaCalcForm">
+          <label class="calc-form-label" for="freqInput">Частота</label>
+          <input
+            type="number"
+            id="freqInput"
+            name="frequency"
+            min="0.001"
+            step="any"
+            placeholder="433"
+            required
+            inputmode="decimal"
+          />
+          <select id="freqUnit" name="unit" class="calc-unit" aria-label="Единицы измерения частоты">
+            <option value="mhz" selected>МГц</option>
+            <option value="ghz">ГГц</option>
+            <option value="khz">кГц</option>
+          </select>
+          <button type="submit" class="btn-calc">Рассчитать</button>
+        </form>
+        <p class="calc-hint">
+          Формула: 7500 / Частота в МГц. Идеально для четвертьволнового штыря.
+        </p>
+        <p class="calc-result" id="calcResult" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  
+
+
+  <div class="auth-modal" id="authModal" aria-hidden="true">
+    <div class="auth-modal-backdrop" id="authModalBackdrop"></div>
+    <div class="auth-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="authModalTitle">
+      <button type="button" class="auth-modal-close" id="authModalClose" aria-label="Закрыть">×</button>
+      <div class="auth-tabs" role="tablist">
+        <button type="button" class="auth-tab is-active" data-auth-tab="login" role="tab" aria-selected="true">Вход</button>
+        <button type="button" class="auth-tab" data-auth-tab="register" role="tab" aria-selected="false">Регистрация</button>
+      </div>
+      <form id="authLoginForm" class="auth-panel is-active" data-auth-panel="login">
+        <h2 class="auth-modal-title" id="authModalTitle">Вход в SDR_LAB</h2>
+        <label class="auth-label" for="loginEmail">Email</label>
+        <input class="auth-input" type="email" id="loginEmail" name="email" required autocomplete="email" />
+        <label class="auth-label" for="loginPass">Пароль</label>
+        <input class="auth-input" type="password" id="loginPass" name="password" required autocomplete="current-password" />
+        <button type="submit" class="btn-auth-submit">Войти</button>
+      </form>
+      <form id="authRegisterForm" class="auth-panel" data-auth-panel="register" hidden>
+        <h2 class="auth-modal-title">Регистрация</h2>
+        <label class="auth-label" for="regName">Имя</label>
+        <input class="auth-input" type="text" id="regName" name="name" required autocomplete="name" />
+        <label class="auth-label" for="regEmail">Email</label>
+        <input class="auth-input" type="email" id="regEmail" name="email" required autocomplete="email" />
+        <label class="auth-label" for="regPass">Пароль</label>
+        <input class="auth-input" type="password" id="regPass" name="password" required autocomplete="new-password" minlength="4" />
+        <span class="auth-label">Аватар</span>
+        <div class="auth-avatar-picker" role="radiogroup" aria-label="Выбор аватарки">
+          <label class="auth-avatar-option"><input type="radio" name="regAvatar" value="📡" checked /> 📡</label>
+          <label class="auth-avatar-option"><input type="radio" name="regAvatar" value="🛰️" /> 🛰️</label>
+          <label class="auth-avatar-option"><input type="radio" name="regAvatar" value="📻" /> 📻</label>
+        </div>
+        <button type="submit" class="btn-auth-submit btn-auth-submit--register">Зарегистрироваться</button>
+      </form>
+    </div>
+  </div>
+  <div class="auth-toast" id="authToast" role="status" aria-live="polite"></div>
+
+
+  <div class="profile-cabinet" id="profileCabinet" aria-hidden="true">
+    <div class="profile-cabinet-backdrop" id="profileCabinetBackdrop"></div>
+    <div class="profile-cabinet-shell wrap">
+      <button type="button" class="profile-cabinet-close" id="profileCabinetClose" aria-label="Закрыть кабинет">×</button>
+      <p class="profile-cabinet-tag">// user_dashboard.sys</p>
+      <div class="profile-dashboard">
+        <aside class="profile-card panel">
+          <div class="profile-avatar" id="profileAvatar" aria-hidden="true">SDR</div>
+          <h2 class="profile-name" id="profileName">Оператор</h2>
+          <p class="profile-since" id="profileSince">В эфире с: —</p>
+        </aside>
+        <div class="profile-dashboard-grid">
+          <section class="profile-panel panel">
+            <h3 class="profile-panel-title">Мой сетап</h3>
+            <ul class="profile-equipment">
+              <li><label class="profile-check"><input type="checkbox" id="equipHackrf" data-equip="hackrf" /> HackRF One</label></li>
+              <li><label class="profile-check"><input type="checkbox" id="equipSpider" data-equip="spider" /> Антенна-паук</label></li>
+              <li><label class="profile-check"><input type="checkbox" id="equipMagloop" data-equip="magloop" /> Магнитная рамка</label></li>
+            </ul>
+          </section>
+          <section class="profile-panel panel">
+            <h3 class="profile-panel-title">Избранные частоты</h3>
+            <ul class="profile-freq-list" id="profileFreqList"></ul>
+            <form class="profile-freq-form" id="profileFreqForm">
+              <input class="auth-input profile-freq-input" type="text" id="profileFreqInput" placeholder="118.700 МГц — Авиация" required />
+              <button type="submit" class="btn-auth-submit profile-freq-add">Добавить</button>
+            </form>
+          </section>
+          <section class="profile-panel panel profile-panel--achievements">
+            <h3 class="profile-panel-title">Достижения</h3>
+            <div class="profile-achievements">
+              <div class="profile-achievement" data-achievement="listener" title="Включили плеер «Послушать эфир»">
+                <span class="profile-achievement-icon" aria-hidden="true">▶</span>
+                <span class="profile-achievement-label">Слушатель</span>
+              </div>
+              <div class="profile-achievement" data-achievement="engineer" title="Рассчитали антенну">
+                <span class="profile-achievement-icon" aria-hidden="true">λ</span>
+                <span class="profile-achievement-label">Инженер</span>
+              </div>
+              <div class="profile-achievement" data-achievement="cartographer" title="Открыли карту вышек">
+                <span class="profile-achievement-icon" aria-hidden="true">🗺</span>
+                <span class="profile-achievement-label">Картограф</span>
+              </div>
+            </div>
+          </section>
+        </div>
+        <footer class="profile-dashboard-footer">
+          <button type="button" class="btn-auth-logout profile-logout" id="profileLogout">Выйти</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="auth-modal cart-modal" id="cartModal" aria-hidden="true">
+    <div class="auth-modal-backdrop" id="cartModalBackdrop"></div>
+    <div class="auth-modal-dialog cart-dialog" role="dialog" aria-modal="true" aria-labelledby="cartModalTitle">
+      <button type="button" class="auth-modal-close" id="cartModalClose" aria-label="Закрыть">×</button>
+      <h2 class="auth-modal-title" id="cartModalTitle">Корзина</h2>
+      <ul class="cart-list" id="cartList"></ul>
+      <p class="cart-total" id="cartTotal">Итого: 0 ₽</p>
+      <button type="button" class="btn-auth-submit" id="cartCheckoutBtn">Оформить заказ</button>
+    </div>
+  </div>
+
+
+  <div class="auth-modal" id="orderContactModal" aria-hidden="true">
+    <div class="auth-modal-backdrop" id="orderContactBackdrop"></div>
+    <div class="auth-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="orderContactTitle">
+      <button type="button" class="auth-modal-close" id="orderContactClose" aria-label="Закрыть">×</button>
+      <h2 class="auth-modal-title" id="orderContactTitle">Оформление заказа</h2>
+      <p class="order-contact-text">
+        Спасибо за интерес! Чтобы купить товар или задать вопрос, напишите мне в Telegram:
+        <a href="https://t.me/derixiji" class="contact-messenger-link" target="_blank" rel="noopener noreferrer">@derixiji</a>
+        или в
+        <a href="https://max.ru/" class="contact-messenger-link contact-messenger-max" target="_blank" rel="noopener noreferrer">MAX</a>.
+      </p>
+      <button type="button" class="btn-auth-submit btn-auth-submit--register" id="orderContactOk">Понятно</button>
+    </div>
+  </div>
+
+
+  <button type="button" class="mini-chat-fab" id="miniChatFab" aria-label="Открыть чат" aria-expanded="false">💬</button>
+  <div class="mini-chat-panel" id="miniChatPanel" aria-hidden="true" role="dialog" aria-labelledby="miniChatTitle">
+    <div class="mini-chat-header">
+      <h2 class="mini-chat-title" id="miniChatTitle">Мини-чат</h2>
+      <button type="button" class="mini-chat-close" id="miniChatClose" aria-label="Закрыть">×</button>
+    </div>
+    <p class="mini-chat-intro">Спасибо за интерес! Чтобы купить товар или задать вопрос, напишите мне в Telegram:
+        <a href="https://t.me/derixiji" class="contact-messenger-link" target="_blank" rel="noopener noreferrer">@derixiji</a>
+        или в
+        <a href="https://max.ru/" class="contact-messenger-link contact-messenger-max" target="_blank" rel="noopener noreferrer">MAX</a>.</p>
+    <form class="mini-chat-form" id="miniChatForm">
+      <label class="auth-label" for="miniChatName">Имя</label>
+      <input class="auth-input" type="text" id="miniChatName" name="name" required autocomplete="name" />
+      <label class="auth-label" for="miniChatMsg">Сообщение</label>
+      <textarea class="auth-input mini-chat-textarea" id="miniChatMsg" name="message" rows="3" required></textarea>
+      <button type="submit" class="btn-auth-submit">Отправить</button>
+    </form>
+  </div>
+
+  <footer>
+
+      <div class="footer-status weather-widget weather-widget--footer" aria-live="polite">
+        <form class="weather-widget-form" id="weatherCityFormFooter" data-weather-form>
+          <div class="weather-widget-controls">
+            <select class="weather-widget-select" id="weatherCitySelectFooter" data-weather-select aria-label="Выбор города">
+              <option value="Казань" selected>Казань</option>
+              <option value="Москва">Москва</option>
+              <option value="Санкт-Петербург">Санкт-Петербург</option>
+              <option value="Новосибирск">Новосибирск</option>
+              <option value="Екатеринбург">Екатеринбург</option>
+              <option value="Сочи">Сочи</option>
+            </select>
+            <input class="weather-widget-input" type="text" id="weatherCityInputFooter" data-weather-input placeholder="Другой город" autocomplete="off" />
+            <button type="submit" class="weather-widget-find">Найти</button>
+          </div>
+        </form>
+        <div class="weather-widget-readout">
+          <span class="weather-display-icon" data-weather-part="icon" aria-hidden="true">⏳</span>
+          <span class="weather-display-city" data-weather-part="city">Казань</span>
+          <span class="weather-display-time" data-weather-part="time" id="footerClock">--:--</span>
+          <span class="weather-display-temp" data-weather-part="temp">…</span>
+        </div>
+        <p class="weather-widget-error is-hidden" id="weatherErrorFooter" data-weather-error role="alert"></p>
+      </div>
+    <div class="footer-contacts">
+      <a href="tel:+79274030625" class="footer-contact-link">+7 927 403 06 25</a>
+      <span class="footer-contacts-sep" aria-hidden="true">·</span>
+      <a href="https://t.me/derixiji" class="footer-contact-link footer-contact-tg" target="_blank" rel="noopener noreferrer">Telegram</a>
+      <span class="footer-contacts-sep" aria-hidden="true">·</span>
+      <a href="https://wa.me/79274030625" class="footer-contact-link footer-contact-wa" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <span class="footer-contacts-sep" aria-hidden="true">·</span>
+      <a href="https://max.ru/" class="footer-contact-link footer-contact-max" target="_blank" rel="noopener noreferrer">MAX</a>
+    </div>
+    © 2026 <span>SDR Lab</span>. Сделано с любовью к радиоэфиру.
+  </footer>
+
+  <script src="shop-products.js"></script>
+  <script src="script.js"></script>
+  <script src="fx-premium.js"></script>
+  <script src="calculator.js"></script>
+</body>
+</html>
