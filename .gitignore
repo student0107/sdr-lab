@@ -11,6 +11,7 @@ node_modules/
 credentials.json
 secrets/
 **/api-keys.local.*
+map-api-config.local.js
 
 # IDE / агент (не часть сайта)
 .cursor/

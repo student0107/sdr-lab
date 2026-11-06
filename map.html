@@ -6,14 +6,7 @@
   <meta name="description" content="Карта вышек — SDR_LAB" />
   <title>SDR_LAB — Карта вышек</title>
   <link rel="stylesheet" href="style.css" />
-  <!--
-    Яндекс.Карты API 2.1: замените YOUR_YANDEX_API_KEY на свой ключ.
-    Ключ задаётся только через переменную окружения или локальный файл (не коммитьте ключ в git).
-  -->
-  <script
-    src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_YANDEX_API_KEY&lang=ru_RU"
-    type="text/javascript"
-  ></script>
+  <!-- Яндекс.Карты: ключ через map-api-config.local.js (локально) или GitHub Secret YANDEX_MAP_API_KEY -->
 </head>
 <body data-page="map.html">
   <div class="page-bg" aria-hidden="true">
@@ -292,6 +285,8 @@
   <script src="shop-products.js"></script>
   <script src="script.js"></script>
   <script src="fx-premium.js"></script>
+  <script src="map-api-config.js"></script>
+  <script src="map-yandex-loader.js"></script>
   <script src="towers-kazan-data.js"></script>
   <script src="map.js"></script>
 </body>

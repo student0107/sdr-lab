@@ -14,7 +14,7 @@
 
 Общие: `style.css`, `script.js`. Дополнительно: `antennas.js`, `calculator.js`, `map.js` (только `map.html`).
 
-**Ключ Яндекс.Карт:** в `map.html` замените `YOUR_YANDEX_API_KEY` в URL API на свой ключ (`lang=ru_RU`).
+**Ключ Яндекс.Карт:** не хранится в git. Локально: скопируйте `map-api-config.local.example.js` → `map-api-config.local.js` и вставьте ключ. На GitHub Pages: **Settings → Secrets → Actions → `YANDEX_MAP_API_KEY`** (ограничьте ключ доменом `*.github.io`).
 
 **Вышки OSM (Казань):** `npm run towers:kazan` → `towers-kazan.geojson` + `towers-kazan-data.js` (491+ точек из OpenStreetMap).
 
@@ -44,7 +44,7 @@ npm run serve
 3. На GitHub: **Settings → Pages → Build and deployment → GitHub Actions**
 4. После зелёного workflow: `https://<логин>.github.io/sdr-lab/`
 
-**Безопасность:** пароли ЛК хранятся только в `localStorage` браузера; ключ Яндекс.Карт подставьте локально и ограничьте по домену `*.github.io`. Не коммитьте `.env` с ключами.
+**Безопасность:** пароли ЛК — только `localStorage` в браузере; API-ключи — только `map-api-config.local.js` (в `.gitignore`) или GitHub Secret. Не коммитьте `.env` и `map-api-config.local.js`.
 
 ## Тестовые вышки
 

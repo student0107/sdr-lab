@@ -1,20 +1,8 @@
 /**
- * Яндекс.Карты 2.1 — инициализация на странице map.html.
- *
- * Ключ API подключается в map.html в URL скрипта:
- *   apikey=YOUR_YANDEX_API_KEY
- * Замените YOUR_YANDEX_API_KEY на свой ключ из кабинета разработчика Яндекса
- * (пример формата: b2030872-4355-4674-ad18-26784981a2c2).
+ * Яндекс.Карты 2.1 — map.html. Ключ: map-api-config.local.js или GitHub Secret (см. README).
  */
 (function () {
   "use strict";
-
-  if (typeof ymaps === "undefined") {
-    console.warn(
-      "Яндекс.Карты не загружены. Проверьте apikey в map.html (см. комментарий в <head> или перед map.js)."
-    );
-    return;
-  }
 
   var EXCLUDED_TOWER_BANDS = {
     minaret: true,
@@ -104,9 +92,19 @@
     },
   ];
 
-  ymaps.ready(function () {
-    initYandexMap();
-  });
+  function bootMapApp() {
+    if (typeof ymaps === "undefined") {
+      return;
+    }
+    ymaps.ready(function () {
+      initYandexMap();
+    });
+  }
+
+  document.addEventListener("sdr-yandex-ready", bootMapApp);
+  if (typeof ymaps !== "undefined") {
+    bootMapApp();
+  }
 
   function initYandexMap() {
     if (!document.getElementById("map")) {

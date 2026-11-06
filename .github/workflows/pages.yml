@@ -25,6 +25,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Inject Yandex Maps API key (GitHub Secret)
+        env:
+          YANDEX_MAP_API_KEY: ${{ secrets.YANDEX_MAP_API_KEY }}
+        run: |
+          if [ -n "$YANDEX_MAP_API_KEY" ]; then
+            node -e "const fs=require('fs');const k=process.env.YANDEX_MAP_API_KEY;fs.writeFileSync('map-api-config.local.js','window.SDR_LAB_YANDEX_API_KEY='+JSON.stringify(k)+';\\n');"
+          fi
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
