@@ -26,7 +26,7 @@
 4. `node scripts/build-multipage.js` — генерирует пять HTML-файлов.
 5. `assets/`, `towers.geojson`, `towers-data.js` — медиа и карта.
 
-## Запуск
+## Запуск локально
 
 ```powershell
 cd C:\Users\User\Projects\sdr-lab
@@ -34,6 +34,17 @@ npm run serve
 ```
 
 Откройте `http://localhost:…/index.html`. Карта и большой GeoJSON надёжнее через сервер.
+
+## Публикация на GitHub Pages
+
+В репозиторий **не попадают** (см. `.gitignore`): папка `scripts/` (исходники каталога и сборки), `_legacy-single-page.html`, тестовые `towers.geojson` / `towers-data.js`, секреты `.env`, `node_modules/`. На сайте в интернете лежат только готовые HTML/JS/CSS и картинки.
+
+1. Войти в GitHub: `gh auth login`
+2. Из корня проекта: `.\deploy-to-github.ps1`
+3. На GitHub: **Settings → Pages → Build and deployment → GitHub Actions**
+4. После зелёного workflow: `https://<логин>.github.io/sdr-lab/`
+
+**Безопасность:** пароли ЛК хранятся только в `localStorage` браузера; ключ Яндекс.Карт подставьте локально и ограничьте по домену `*.github.io`. Не коммитьте `.env` с ключами.
 
 ## Тестовые вышки
 
